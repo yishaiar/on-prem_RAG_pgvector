@@ -1,0 +1,16 @@
+python-dotenv~=1.0.0
+matplotlib
+plotly
+pandas
+scipy
+scikit-learn
+tqdm
+psycopg2-binary
+openai~=0.27.9
+
+datasets==2.14.6
+# cohere==4.34
+# openai==1.2.2
+
+torch==2.1.2 
+transformers==4.25.0
