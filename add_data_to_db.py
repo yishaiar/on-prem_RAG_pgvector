@@ -12,10 +12,12 @@ def VectorIndexUpdate(texts,tokenizer= None,model= None,device = None):
     LEN,batch_size = len(texts),int(os.getenv('batch_size'))
         
 
-    
+    batch_size =1
     for i in tqdm(range(0, LEN, batch_size)):
+
         # start = time.time()   
         texts_batch = texts[i:min(i+batch_size,LEN)].copy()
+
 
         
         # embeddings_batch = get_embeddings(texts_batch, os.getenv('OPENAI_EMBEDDING_MODEL'),

@@ -31,3 +31,5 @@ def embed(docs: list[str],tokenizer= None,model= None,device = None) -> list[lis
         doc_embeds = last_hidden.sum(dim=1) / \
             tokens["attention_mask"].sum(dim=1)[..., None]
     return doc_embeds.cpu().numpy().tolist()
+
+

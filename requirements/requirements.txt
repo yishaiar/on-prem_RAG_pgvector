@@ -14,3 +14,6 @@ datasets==2.14.6
 
 torch==2.1.2 
 transformers==4.25.0
+langchain
+langchain_community
+llama_cpp_python
